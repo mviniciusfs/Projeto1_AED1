@@ -22,7 +22,7 @@ class Imposto
   private double valorImposto;
   private double nvalorProduto;
   private double porcentImposto;
-  private int ClassMaterial;
+  public int ClassMaterial;
 
   public void retornaDados(int cm)
   {   
@@ -125,17 +125,12 @@ class Imposto
 
   public void ImprimeCalculoImposto()
   {
-    Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
-    Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+    Console.WriteLine();
 
-    Console.WriteLine("Valor dos impostos pagos R${0}\nValor do produto sem impostos R${1}\nPorcentagem Total de impostos {2}%", valorImposto, nvalorProduto, porcentImposto);
+
+    Console.WriteLine("Valor dos impostos R${0}\nValor do produto sem impostos R${1}\nPorcentagem Total de impostos {2}%", valorImposto.ToString("F2", CultureInfo.InvariantCulture), nvalorProduto.ToString("F2", CultureInfo.InvariantCulture), porcentImposto);
 
     Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
     Console.WriteLine("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
   }
-
-
-  
-
-
 }
