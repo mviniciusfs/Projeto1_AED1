@@ -1,0 +1,19 @@
+O projeto foi confeccionado com 3 classes (Dadosadic.cs; Imposto.cs; Produto.cs), que são responsáveis pelo cabeçalho e final do programa, pelos cálculos e pelos dados do produto, além da Main.
+Os dados para alimentar o sistema foram utilizados com base em pesquisas na internet e trabalhados para trazer os resultados com o que o usuário escolha no programa.
+Ex.: É mostrado uma lista selecionável, cada dígito representa um tipo de Produto, baseado na escolha, o programa irá realizar os cálculos relacionados a impostos e ao valor do determinado produto descrito.
+Foi utilizado “Get e Set” na classe Produto e também instanciação.
+Cada classe teve pelo menos dois métodos utilizados dentro da Main para realizar  funções como: Imprimir dados, Calcular dados tratar dados de entrada etc...
+
+Explicação Classes e Métodos:
+
+Classe Dadosadic.cs
+Métodos Titulo() e Infofinal()
+--> utilizados para imprimir os dados de cabeçalho do programa e também as informações finais que trazem a conclusão da atividade feita também pelo programa.
+
+Classe Imposto.cs
+Métodos retornaDados(), CalculaImposto() e ImprimeCalculoImposto().
+--> o primeiro método é utilizado para instanciar a classe (leia tipo de produto) do Produto; o segundo método é para realizar o calculo de imposto já configurado com base no preço e classe de material; o terceiro método é para imprimir as informações calculadas ao usuário.
+
+Classe Produto.cs
+Métodos dadosProduto(), listaTipoMaterial() e imprimeProd().
+--> o primeiro método é utilizado para instanciar os dados do Produto; o segundo para imprimir na tela a lista com todos os tipo de produto cadastrados e qual o código respectivo a cada um; o terceiro para imprimir os dados que foram inseridos pelo usuário sobre o produto desejado para cálculo.
